@@ -1,0 +1,129 @@
+@import url('https://fonts.googleapis.com/css2?family=Sora:wght@200;400;500&display=swap');
+
+body {
+    max-width: 1280px;
+    margin: 0 auto;
+    background: #161b25;
+    color: #cbd5e1;
+    font-family: 'Sora', sans-serif;
+    line-height: 1.5;
+    background-position: 0 0, 25px 25px;
+    background-attachment: fixed;
+    background-size: 50px 50px;
+    overflow-x: hidden;
+    padding: 4rem;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+}
+
+.divQuotes {
+    background-color: #20293A;
+    border-radius: 13px;
+    width: 750px;
+    height: 300px;
+    position: static;
+    inset: 0px;
+    margin: auto;
+    padding: 20px;
+    background-image: url('bg-image-random-quote.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    text-align: center;
+    display: block;
+    margin-top: 110px;
+}
+
+#authorText {
+    text-align: center;
+}
+
+#quoteText {
+    font-weight: normal;
+}
+
+.tags {
+    display: inline-block;
+    text-align: center;
+    margin: 0 0.4%;
+
+    padding: 7px;
+    padding-top: 1px;
+    height: 17px;
+
+    background-color: transparent;
+    color: #AEB0FF;
+    border: 2px solid #AEB0FF;
+    border-radius: 20px;
+}
+
+.divButtons {
+    text-align: center;
+    display: block;
+    flex-direction: column;
+    padding-top: 15px;
+}
+
+.buttons {
+    background-color: #2a3549;
+    color: rgb(253, 253, 253);
+    font-size: 16px;
+    font-weight: bold;
+    border: none;
+    border-radius: 12px;
+    padding: 10px 20px;
+    cursor: pointer;
+    padding-right: 46px;
+    margin-left: 12px;
+    transition: background-color 0.3s ease;
+    font-weight: normal;
+}
+
+.buttons:hover {
+    background-color: #242c3b;
+}
+
+.buttons:active {
+    background-color: #1f6690;
+}
+
+
+#shareQuote {
+    background-image: url('link.svg');
+    background-repeat: no-repeat;
+    background-position: 90% 50%;
+    background-size: 32px;
+}
+
+#randomQuote {
+    background-image: url('regroup.svg');
+    background-repeat: no-repeat;
+    background-position: 90% 50%;
+    background-size: 32px;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+
+}
+
+@media screen and (min-width: 720px) {
+    .logo {
+        display: initial;
+    }
+
+    .get-started {
+        width: auto;
+    }
+
+    main {
+        flex-direction: row;
+    }
+
+    footer {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 1rem;
+    }
+}
